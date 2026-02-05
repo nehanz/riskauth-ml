@@ -3,9 +3,12 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "riskauth-ml"
+name = "riskauth_ml"
 version = "0.1.0"
 description = "Machine learning module for RiskAuth"
+authors = [
+    {name = "Nehan WIjayagunarathna", email = "nehannimsara0031029@gmail.com"},
+]
 requires-python = ">=3.8"
 dependencies = []
 
@@ -16,6 +19,5 @@ dev = [
     "flake8>=3.9",
 ]
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["models", "features", "inference"]
+[tool.setuptools]
+packages = ["riskauth_ml"]
