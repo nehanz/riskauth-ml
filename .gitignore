@@ -1,0 +1,80 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+bin/
+lib/
+include/
+share/
+
+# Editors and OS files
+.DS_Store # macOS
+.idea/    # PyCharm/IntelliJ
+.vscode/  # VS Code (optional, if you have project-specific settings you want to ignore)
+ehthumbs.db # Windows
+*.stackdump # Windows
+*.nvprm # Windows
+# Linux
+*~
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+# KDE directory preferences
+.directory
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# Specific to FastAPI/Python projects
+.env       # Environment variables file for secrets/config
+test_db.db # Example for an SQLite database file used in testing
+
+# Pipenv
+# Pipfile.lock is required to ensure repeatable installs, so it is usually tracked in git
+# Pipfile itself is a standard file that defines the project dependencies.
+# The virtualenv can be ignored.
+# virtualenv = false in Pipfile means that the virtualenv is created in the project folder.
+# In that case, you need to ignore the folder name (e.g. .venv)
+# On other cases (default pipenv behavior), the virtualenv is created outside the project folder.
+
+# setuptools
+.installed.cfg
+*.egg
+MANIFEST
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# pytest
+.pytest_cache/
+
+# Docker related
+# .dockerignore functions for Docker builds, but you might want to ignore some files from Git too.
+# For example, local build output or specific local configurations not relevant for the repo.
