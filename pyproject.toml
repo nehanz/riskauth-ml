@@ -3,11 +3,18 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "riskauth-ml"
-version = "0.1.0"
-description = "Machine learning module for RiskAuth"
-requires-python = ">=3.8"
-dependencies = []
+name = "riskauth_ml"
+version = "2.0.0"
+description = "RiskAuth ML — 21-feature unsupervised risk scoring engine"
+authors = [
+    {name = "Nehan Wijayagunarathna", email = "nehannimsara0031029@gmail.com"},
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "joblib>=1.3",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -18,4 +25,4 @@ dev = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["models", "features", "inference"]
+include = ["riskauth_ml*"]

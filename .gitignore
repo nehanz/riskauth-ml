@@ -78,3 +78,8 @@ htmlcov/
 # Docker related
 # .dockerignore functions for Docker builds, but you might want to ignore some files from Git too.
 # For example, local build output or specific local configurations not relevant for the repo.
+
+# Logs and databases
+logs/
+*.log
+*.db
